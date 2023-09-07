@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Noto+Sans:wght@100&family=Poppins:wght@100;400&family=Rubik:wght@300&display=swap');
+
+@import "partials/color";
+@import "partials/header";
+@import "partials/layout";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: $preto11;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+
+

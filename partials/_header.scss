@@ -1,0 +1,100 @@
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: $preto1;
+    padding: 10px 20px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.navbar a {
+    font-weight: 800;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.botao-cor {
+    text-transform: uppercase;
+    background-color: $amarelo1;
+    border-radius: 16px;
+    padding: 10px;
+} 
+
+
+
+.botao-cor:hover, .botao-cor-cadastrar {
+    background: $amarelo11;
+}
+
+.botao-sobre:hover {
+    color: $amarelo11;
+    cursor: pointer;
+}
+
+.botao-cor-cadastrar {
+    text-transform: uppercase;
+    background-color: $amarelo1;
+    border-radius: 16px;
+    padding: 10px 80px;
+}
+
+.logo a img{
+    width: 189px
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: $preto1;
+        padding: 20px;
+    }
+    
+    .navbar ul {
+        display: flex;
+        list-style: none;
+        gap: 40px;
+    }
+    
+    .botao-cor {
+        text-transform: uppercase;
+        background-color: $amarelo1;
+        border-radius: 16px;
+        padding: 10px;
+    } 
+    
+    
+    
+    .botao-cor:hover, .botao-cor-cadastrar {
+        background: $amarelo11;
+    }
+    
+    .botao-sobre:hover {
+        color: $amarelo11;
+        cursor: pointer;
+    }
+    
+    .botao-cor-cadastrar {
+        text-transform: uppercase;
+        background-color: $amarelo1;
+        border-radius: 16px;
+        padding: 10px 80px;
+    }
+    
+    .logo a img{
+        width: 189px
+    }
+}
+
+

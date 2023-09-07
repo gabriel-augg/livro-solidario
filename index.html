@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livro Solidário</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/icone.png">
+</head>
+<body id="telaPrincipal">
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="./assets/logo.png" alt="logo">
+            </a>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#sobre" class="botao-sobre" id="botao-sobre">Sobre</a></li>
+                <li><a href="livros.html" class="botao-cor" >Livros para doação</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="bg-cta">
+        <div class="cta">
+
+            <h1>Transforme vidas com a doação de livros. Cada livro que você compartilha é uma jornada que se inicia, uma mente que se expande e um mundo de possibilidades que se revela.</h1>
+            <a href="#doacoes" id="aDoacoes" class="doar-livro" >Doar um livro</a>
+            
+        </div>
+    </div>
+    <div class="sobre" id="sobre">
+        <div class="alinhar">
+
+            <div class="alinhamento-conteudo">
+                <article class="conteudo-sobre">
+                    <h2>Porque doar um livro?</h2>
+                    <p>Doar um livro é um gesto de generosidade que ilumina mentes e abre portas para o conhecimento. Quando doamos um livro, estamos compartilhando não apenas palavras impressas, mas também oportunidades de aprendizado e crescimento. Cada página é um convite para explorar novos mundos, adquirir conhecimentos e expandir horizontes. Além disso, a doação de livros promove a igualdade de acesso à educação, especialmente para aqueles com recursos limitados. É um ato que enriquece não apenas quem recebe, mas também quem dá, criando laços de solidariedade e fortalecendo o valor da cultura literária. Portanto, doar um livro é muito mais do que dar um objeto; é compartilhar o poder transformador das palavras. </p>
+                </article>
+                <aside class="img-sobre">
+                    <img id="imagem2"  src="./assets/ilustracao1.svg">
+                </aside>
+            </div>
+        </div>
+        <div class="alinhar">
+
+            <div class="alinhamento-conteudo">
+                <aside class="img-sobre">
+                    <img id="imagem1" src="./assets/ilustracao2.svg">
+                </aside>
+                <article class="conteudo-sobre">
+                    <h2>Nossa missão</h2>
+                    <p>O Livro Solidário tem o compromisso de espalhar o poder transformador da leitura, construindo um mundo onde todos tenham acesso igualitário à educação, conhecimento e oportunidades. Nossa missão é promover a doação de livros como uma ferramenta para fortalecer comunidades, enriquecer mentes e inspirar mudanças positivas. </p>
+                </article>
+            </div>
+        </div>
+    </div>
+    
+    <div class="cadastrar-livro" id="doacoes">
+        <section>
+            <div class="conteudo-cadastrar">
+                <h1>DOE UM LIVRO</h1>
+            </div>
+            <div class="inputs-cadastrar conteudo-cadastrar">
+                <div class="campos-cadastrar">
+                    <h3>Dados pessoais</h3>
+                    <input type="text" class="campo-input" id="nome" placeholder="Digite seu nome">
+                    <input type="text" class="campo-input" id="sobrenome" placeholder="Digite seu sobrenome">
+                    <input type="email" autocomplete="email" class="campo-input" id="email" placeholder="Digite seu email">
+                    <input type="tel" class="campo-input" id="telefone" placeholder="Digite seu telefone">
+                </div>
+                <div class="campos-cadastrar">
+                    <h3>Sua região</h3>
+                    <input type="number" class="campo-input" id="cep" placeholder="CEP">
+                    <input type="text" class="campo-input" id="rua" placeholder="Rua">
+                    <input type="text" class="campo-input" id="cidade" placeholder="Cidade">
+                    <input type="text" class="campo-input" id="uf" placeholder="UF">
+                </div>
+                <div class="campos-cadastrar">
+                    <h3>Informações do livro</h3>
+                    <input type="text"  class="campo-input" id="nomeLivro" placeholder="Nome do livro">
+                    <input type="text" class="campo-input" id="autor" placeholder="Autor">
+                    <input type="text"  class="campo-input" id="genero" placeholder="Gênero">
+                    <input type="text"  class="campo-input" id="condicao" placeholder="Condição">
+                </div>
+            </div>
+            <div class="conteudo-cadastrar" id="botoes">
+                <button id="btndoar" class="botao-cadastrar">Doar</button>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <img src="./assets/logo.png" alt="logo">
+    </footer>
+    <div class="janela-modal" id="janela-modal">
+        <div class="modal">
+            <h1>Livro doado com sucesso!</h1>
+            <p>Agora só resta esperar alguem entrar em contado com você :)</p>
+            <div class="botoesModal">
+                
+                <button class="botaoModal" onclick="doacoes()">Ver doacoes</button>
+                <button class="botaoModal" onclick="fecharModal()">Voltar</button>
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
