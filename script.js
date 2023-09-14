@@ -213,7 +213,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     
         cep.addEventListener('blur', () => {
-            fetch(`http://viacep.com.br/ws/${cep.value}/json/`)
+            fetch(`https://viacep.com.br/ws/${cep.value}/json/`)
             .then((res) => res.json())
             .then(data => {
                 if (data.logradouro === undefined || data.localidade === undefined || data.uf === undefined){
